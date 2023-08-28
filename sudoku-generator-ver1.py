@@ -17,6 +17,7 @@ board = [[nums[pattern(r, c)] for c in column] for r in row]
 for i in sample(range(81), 64):
     # i//9 index of row
     # i%9 index within the row (column)
+    # list comprehension
     board[i//9][i%9] = 0
 
 line0  = expandLine("╔═══╤═══╦═══╗")
@@ -31,6 +32,7 @@ values = [[number_txt[n] for n in row] for row in board]
 print(line0)
 for i in range(9):
     number_with_line = zip(line1.split("-"), values[i])
+    # replace method
     print( "".join(line+number for line, number in number_with_line)+" ║")
     if i//3 in [0,1,2] and i%3 != 2:
         print(line2)
