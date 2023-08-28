@@ -2,10 +2,9 @@
 
 ## Sudoku solver
 ##### Ver1
-Solves manually inputted sudoku (list format)
+- Solves manually inputted sudoku (list format)
 ##### Ver2
-Randomly generates a sudoku question before solving
-(test purpose)
+- Randomly generates a sudoku question before solving (test purpose)
 
 ## Sudoku generator
 ##### Ver1
