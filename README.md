@@ -1,5 +1,5 @@
 # Sudoku
-Python programs that solves/generates sudoku puzzle
+Python program that solves/generates sudoku puzzle
 ## :small_blue_diamond: Sudoku solver
 #### Version 1
 - Solves manually inputted sudoku (list format)
