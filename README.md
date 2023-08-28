@@ -9,7 +9,7 @@ Python program that solves/generates sudoku puzzle
 ## :small_orange_diamond: Sudoku generator
 #### Version 1
 1. Randomly generates a 9x9 grid of values that obeys the rule of sudoku
-2. Removes 60 values (21 clues left)
+2. Removes 60 values (21 clues left) on the board
 3. Prints the question using Unicode box drawing characters
 #### Version 2
 *Difference from sudoku-generator-ver1.py*
