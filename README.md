@@ -1,12 +1,12 @@
 # Sudoku
 Python programs that solves/generates sudoku puzzle
-## Sudoku solver
+### Sudoku solver
 ##### Ver1
 - Solves manually inputted sudoku (list format)
 ##### Ver2
 - Randomly generates a sudoku question before solving (test purpose)
 
-## Sudoku generator
+### Sudoku generator
 ##### Ver1
 1. Randomly generates a 9x9 grid of values that obeys the rule of sudoku
 2. Removes 60 values (21 clues left)
