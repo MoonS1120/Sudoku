@@ -12,7 +12,7 @@
 2. Removes 60 values (21 clues left)
 3. Prints the question using Unicode box drawing characters
 ##### Ver2
-Difference from sudoku-generator-ver2.py
+Difference from sudoku-generator-ver1.py
 1. Object-oriented programming demonstrated
 2. Asks the user to choose the printing format (list or board)
 3. Prints the answer separately after printing the question
