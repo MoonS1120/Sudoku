@@ -1,5 +1,5 @@
 # Sudoku
-
+Python programs that solves/generates sudoku puzzle
 ## Sudoku solver
 ##### Ver1
 - Solves manually inputted sudoku (list format)
