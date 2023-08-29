@@ -17,7 +17,6 @@ board = [[nums[pattern(r, c)] for c in column] for r in row]
 for i in sample(range(81), 64):
     # i//9 index of row
     # i%9 index within the row (column)
-    # list comprehension
     board[i//9][i%9] = 0
 
 line0  = expandLine("╔═══╤═══╦═══╗")
