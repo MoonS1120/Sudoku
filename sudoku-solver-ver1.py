@@ -1,32 +1,30 @@
-def isValid(grid, row, col, number):
+def isValid(board, row, col, num):
     for i in range(9):
-        if grid[row][i] == number or grid[i][col] == number:
+        if board[row][i] == num or board[i][col] == num:
             return False
 
-    corner_row = row - row%3
-    corner_col = col - col%3
     for i in range(3):
         for j in range(3):
-            if grid[corner_row + i][corner_col + j] == number:
+            if board[row - row%3 + i][col - col%3 + j] == num:
                 return False
     return True
 
-def solve(grid, row, col):
+def solve(board, row, col):
     if col == 9:
         if row == 8:
             return True
         row += 1
         col = 0
     
-    if grid[row][col] != 0:
-        return solve(grid, row, col + 1)
+    if board[row][col] != 0:
+        return solve(board, row, col + 1)
     
     for num in range(1,10):
-        if isValid(grid, row, col, num):
-            grid[row][col] = num
-            if solve(grid, row, col + 1):
+        if isValid(board, row, col, num):
+            board[row][col] = num
+            if solve(board, row, col + 1):
                 return True
-        grid[row][col] = 0
+        board[row][col] = 0
     return False
 
 board = [[9, 0, 0, 0, 0, 4, 0, 0, 0],
