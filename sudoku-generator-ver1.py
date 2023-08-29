@@ -1,10 +1,10 @@
 from random import sample
 
+def change_order(l): 
+    return sample(l, len(l)) 
+    
 def pattern(r, c):
     return (3*(r % 3) + r // 3 + c) % 9
-
-def change_order(s): 
-    return sample(s, len(s)) 
 
 nums = change_order(range(1, 10))
 row = [i * 3 + r for i in change_order(range(3)) for r in change_order(range(3))]
