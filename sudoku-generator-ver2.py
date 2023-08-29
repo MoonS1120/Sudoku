@@ -22,15 +22,12 @@ def change_order(l):
 def pattern(r, c):
      return (3*(r%3) + r//3 + c) % 9
 
-def expandLine(line):
-    return line[0]+(line[1:5]*2+line[1:4]+line[8])*2+line[1:5]*2+line[9:13]
-
 def print_board(board):
-        line0  = expandLine("╔═══╤═══╦═══╗")
-        line1  = expandLine("║ - │ - ║ - ║")
-        line2  = expandLine("╟───┼───╫───╢")
-        line3  = expandLine("╠═══╪═══╬═══╣")
-        line4  = expandLine("╚═══╧═══╩═══╝")
+    line0  = "╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗"
+    line1  = "║ - │ - │ - ║ - │ - │ - ║ - │ - │ - ║"
+    line2  = "╟───┼───┼───╫───┼───┼───╫───┼───┼───╢"
+    line3  = "╠═══╪═══╪═══╠═══╪═══╪═══╠═══╪═══╪═══╣"
+    line4  = "╚═══╧═══╧═══╩═══╧═══╧═══╩═══╧═══╧═══╝"
 
         number_txt = " 123456789"
         values = [[number_txt[n] for n in row] for row in board]
