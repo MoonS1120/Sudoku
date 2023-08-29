@@ -31,7 +31,6 @@ values = [[number_txt[n] for n in row] for row in board]
 print(line0)
 for i in range(9):
     number_with_line = zip(line1.split("-"), values[i])
-    # replace method
     print( "".join(line+number for line, number in number_with_line)+" ║")
     if i//3 in [0,1,2] and i%3 != 2:
         print(line2)
