@@ -1,13 +1,13 @@
 from random import sample
 
+def change_order(l): 
+    return sample(s, len(l)) 
+    
 def pattern(r, c):
     # r%3 = index within 3x3 block
     # r//3 = index of block
     # ensures all value are between 0-8
     return (3*(r % 3) + r // 3 + c) % 9
-
-def change_order(s): 
-    return sample(s, len(s)) 
 
 def print_sudoku(rows, columns, board):
     columns.insert(0, " ")
