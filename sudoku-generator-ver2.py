@@ -29,19 +29,19 @@ def print_board(board):
     line3  = "╠═══╪═══╪═══╠═══╪═══╪═══╠═══╪═══╪═══╣"
     line4  = "╚═══╧═══╧═══╩═══╧═══╧═══╩═══╧═══╧═══╝"
 
-        number_txt = " 123456789"
-        values = [[number_txt[n] for n in row] for row in board]
+    number_txt = " 123456789"
+    values = [[number_txt[n] for n in row] for row in board]
 
-        print(line0)
-        for i in range(9):
-            number_with_line = zip(line1.split("-"), values[i])
-            print( "".join(line+number for line, number in number_with_line)+" ║")
-            if i//3 in [0,1,2] and i%3 != 2:
-                print(line2)
-            elif i//3 in [0,1] and i%3 == 2:
-                print(line3)
-            else:
-                print(line4)
+    print(line0)
+    for i in range(9):
+        number_with_line = zip(line1.split("-"), values[i])
+        print( "".join(line+number for line, number in number_with_line)+" ║")
+        if i//3 in [0,1,2] and i%3 != 2:
+            print(line2)
+        elif i//3 in [0,1] and i%3 == 2:
+            print(line3)
+        else:
+            print(line4)
 
 def main():
     board_values = Board()
