@@ -1,7 +1,7 @@
 from random import sample
 
 def change_order(l): 
-    return sample(s, len(l)) 
+    return sample(l, len(l)) 
     
 def pattern(r, c):
     # r%3 = index within 3x3 block
