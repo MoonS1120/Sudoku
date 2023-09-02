@@ -1,4 +1,5 @@
 from random import sample
+from copy import deepcopy
 
 class Board:
     def __init__(self):
@@ -6,7 +7,7 @@ class Board:
         self.column = [3*i+c for i in change_order(range(3)) for c in change_order(range(3))]
         self.nums = change_order(range(1, 10))
         self.board = [[self.nums[pattern(c,r)] for c in self.column] for r in self.row]
-        self.answer = [[num for num in row] for row in self.board]
+        self.answer = deepcopy(self.board)
         
     def get_question(self):
         for i in sample(range(81), 60):
